@@ -15,7 +15,7 @@ export default function Header() {
         <div>
           <h2 className="title">
             <Link className="a" href="/">
-              Where in the World?
+              Where in the Worlds?
             </Link>
           </h2>
           <p className="dark-mode" onClick={() => {
