@@ -58,6 +58,16 @@ npm run dev
 ```
 Click on the localhost link to redirect locally to the App
 
+OR
+
+Simply run
+```bash
+npm i vite@latest
+npm install
+npm run build
+npm run preview
+```
+
 ---
 
 ## 📜 **API Used**  
