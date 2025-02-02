@@ -75,7 +75,6 @@
   column-gap: 64px;
   flex-wrap: wrap;
   overflow-wrap: anywhere;
-  margin-inline: 32px;
 }
 
 .details-text p {
