@@ -52,6 +52,8 @@ cd Where-in-the-world
 ### 2️⃣ Open the Command Line Interface or Terminal 
 Simply run
 ```bash
+npm i vite@latest
+npm install
 npm run dev
 ```
 Click on the localhost link to redirect locally to the App
