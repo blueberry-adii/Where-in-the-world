@@ -18,6 +18,12 @@
     
 }
 
+html {
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+    forced-color-adjust: none; 
+}  
+
 * {
     box-sizing: border-box;
     color: var(--txt);
