@@ -106,11 +106,6 @@ header p {
     transition: all 0.2s ease-in-out;
 }
 
-.no-hover .country-card:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
-    transform: unset !important;
-}
-
 .country-card:hover {
     transform: scale(1.04);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
@@ -212,5 +207,12 @@ select {
     }
     .card-text p {
         font-size: 14.4px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .country-card:hover {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+        transform: unset !important;
     }
 }
