@@ -83,14 +83,6 @@ header p {
     cursor: pointer;
 }
 
-.dark-mode i {
-    transition: all 0.2s ease-in-out;
-}
-
-.dark-mode:active i {
-    transform: scale(1.25);
-}
-
 .countries-container {
     max-width: 1400px;
     margin-inline: auto;
@@ -215,5 +207,12 @@ select {
     }
     .card-text p {
         font-size: 14.4px;
+    }
+}
+
+@media (hover: none) {
+    .country-card:hover {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+        transform: unset !important;
     }
 }

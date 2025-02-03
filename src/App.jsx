@@ -7,6 +7,21 @@ function App() {
   const [regionQuery, setRegionQuery] = useState('');
   document.title = 'Where in the World';
   document.querySelector("link[rel='icon']").href = 'https://www.reshot.com/preview-assets/icons/GQ7W2V98AR/globe-GQ7W2V98AR.svg';
+  // const detectInput = () => {
+  //   const body = document.body;
+  //   const enableHover = () => {
+  //     body.classList.remove("no-hover");
+  //     window.addEventListener("touchstart", disableHover, {once: true});
+  //   };
+  //   const disableHover = () => {
+  //     body.classList.add("no-hover");
+  //     window.addEventListener("mousemove", enableHover, {once: true});
+  //   };
+  //   window.addEventListener("touchstart", disableHover, {once: true});
+  //   window.addEventListener("mousemove", enableHover, {once: true});
+  // }
+
+  // detectInput();
 
   return (
     <>
