@@ -4,8 +4,9 @@ import "./countryDetails.css";
 import CountryDetailsShimmer from "./countryDetailsShimmer";
 
 export default function countryDetails() {
+  document.body.style.overflowY = "scroll";
   const params = useParams();
-  const {state} = useLocation();
+  const { state } = useLocation();
   const countryName = params.country.toLowerCase();
   const [countryData, setCountryData] = useState(null);
   const [notFound, setNotFound] = useState(false);
