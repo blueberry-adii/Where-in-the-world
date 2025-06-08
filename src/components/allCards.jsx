@@ -1,18 +1,27 @@
 import React from "react";
 import Card from "./card";
 import AllCardsShimmer from "./allCardsShimmer";
+import { data } from "react-router-dom";
 
 export default function AllCards({ query, regionQuery }) {
   document.body.style.overflowY = "scroll";
-  const [data, setData] = React.useState([]);
+  const [data1, setData1] = React.useState([]);
+  const [data2, setData2] = React.useState([]);
   React.useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://restcountries.com/v3.1/independent?status=true")
       .then((res) => res.json())
       .then((country) => {
-        setData(country);
-        console.log(country);
+        setData1(country);
       });
   }, []);
+  React.useEffect(() => {
+    fetch("https://restcountries.com/v3.1/independent?status=false")
+      .then((res) => res.json())
+      .then((country) => {
+        setData2(country);
+      });
+  }, []);
+  const data = [...data1, ...data2];
   const regionCountries = data.filter((country) =>
     country.region.toLowerCase().includes(regionQuery)
   );
